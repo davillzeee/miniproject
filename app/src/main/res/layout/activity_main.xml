@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_first"
+    tools:context="com.example.user.spuhome.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/spuhomebanner" />
+
+    <ImageView
+        android:id="@+id/floatingActionButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:background="@drawable/spubutton"
+        app:fabSize="normal" />
+
+    <LinearLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="210dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:srcCompat="@drawable/registerbutton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/locationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:layout_anchor="@+id/linearLayout"
+            app:layout_anchorGravity="top|left"
+            app:srcCompat="@drawable/mapbutton" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
